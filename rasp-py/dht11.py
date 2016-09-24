@@ -13,7 +13,7 @@ while 1:
 
     data = {"temperatura":temperature, "umidade":humidity}
 
-    req = urllib2.Request('http://192.168.1.142:1510/api/v1/dht11')
+    req = urllib2.Request('http://138.68.54.156:1510/api/v1/dht11')
     req.add_header('Content-Type', 'application/json')
 
     response = urllib2.urlopen(req, json.dumps(data))

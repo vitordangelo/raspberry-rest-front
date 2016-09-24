@@ -12,7 +12,7 @@
 $(document).ready(function(){
     var refreshId = setInterval( function()
         {
-            $.getJSON("http://192.168.1.142:1510/api/v1/dht11",
+            $.getJSON("http://138.68.54.156:1510/api/v1/dht11",
             function(result){
                 var ultimoValorLido = result.data.length;
                 var temperatura = result.data[ultimoValorLido - 1].temperatura;
